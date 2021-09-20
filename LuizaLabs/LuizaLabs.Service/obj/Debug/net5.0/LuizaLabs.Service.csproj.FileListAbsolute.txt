@@ -1,0 +1,17 @@
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Service.deps.json
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Service.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\ref\LuizaLabs.Service.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Service.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Domain.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Repository.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Domain.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\bin\Debug\net5.0\LuizaLabs.Repository.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.csproj.AssemblyReference.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.AssemblyInfoInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.AssemblyInfo.cs
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.csproj.CopyComplete
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\ref\LuizaLabs.Service.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Service\obj\Debug\net5.0\LuizaLabs.Service.pdb

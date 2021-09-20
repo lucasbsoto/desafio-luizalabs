@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LuizaLabs.Domain\LuizaLabs.Domain.csproj" />
+    <ProjectReference Include="..\LuizaLabs.Repository\LuizaLabs.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

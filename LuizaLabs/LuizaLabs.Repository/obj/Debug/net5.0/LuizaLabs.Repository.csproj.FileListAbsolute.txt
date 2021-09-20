@@ -1,0 +1,15 @@
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\LuizaLabs.Repository.deps.json
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\LuizaLabs.Repository.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\ref\LuizaLabs.Repository.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\LuizaLabs.Repository.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\LuizaLabs.Domain.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\bin\Debug\net5.0\LuizaLabs.Domain.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.csproj.AssemblyReference.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.AssemblyInfoInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.AssemblyInfo.cs
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.csproj.CopyComplete
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\ref\LuizaLabs.Repository.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Repository\obj\Debug\net5.0\LuizaLabs.Repository.pdb
