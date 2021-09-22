@@ -2,7 +2,6 @@ C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\bin\Deb
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\bin\Debug\net5.0\LuizaLabs.Domain.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\bin\Debug\net5.0\ref\LuizaLabs.Domain.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\bin\Debug\net5.0\LuizaLabs.Domain.pdb
-C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.csproj.AssemblyReference.cache
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.AssemblyInfoInputs.cache
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Deb
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\ref\LuizaLabs.Domain.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Domain\obj\Debug\net5.0\LuizaLabs.Domain.csproj.AssemblyReference.cache

@@ -5,8 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\LuizaLabs.Domain\LuizaLabs.Domain.csproj" />
-    <ProjectReference Include="..\LuizaLabs.Repository\LuizaLabs.Repository.csproj" />
+    <ProjectReference Include="..\LuizaLabs.Infra.Data\LuizaLabs.Infra.Data.csproj" />
+    <ProjectReference Include="..\LuizaLabs.Shared\LuizaLabs.Shared.csproj" />
   </ItemGroup>
 
 </Project>

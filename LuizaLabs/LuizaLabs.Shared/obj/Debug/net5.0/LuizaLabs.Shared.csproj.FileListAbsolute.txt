@@ -1,0 +1,11 @@
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\bin\Debug\net5.0\LuizaLabs.Shared.deps.json
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\bin\Debug\net5.0\LuizaLabs.Shared.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\bin\Debug\net5.0\ref\LuizaLabs.Shared.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\bin\Debug\net5.0\LuizaLabs.Shared.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.AssemblyInfoInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.AssemblyInfo.cs
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\ref\LuizaLabs.Shared.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.pdb
