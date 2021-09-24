@@ -6,10 +6,10 @@ namespace LuizaLabs.Service.User
 {
     public interface IUserService
     {
-        Task<UserRegisterResponseDto> Add(UserRegisterRequestDto user);
-        Task<UserModel> Update(UserPutRequestDto user);
-        Task<UserModel> GetById(int id);
+        Task<UserResponseDto> Add(UserRegisterRequestDto user);
+        Task Update(UserPutRequestDto user);
+        Task<UserResponseDto> GetById(int id);
         Task<UserTokenResponseDto> Login(UserLoginRequestDto user);
-        Task<UserModel> ResetPassword(string email);
+        Task ResetPassword(string email);
     }
 }

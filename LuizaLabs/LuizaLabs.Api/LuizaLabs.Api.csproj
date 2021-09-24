@@ -27,4 +27,10 @@
     <ProjectReference Include="..\LuizaLabs.Shared\LuizaLabs.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Templates\recuperacao_senha.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

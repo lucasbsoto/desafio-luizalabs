@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LuizaLabs.Service.User.Dtos
 {
-    public class UserRegisterResponseDto
+    public class UserResponseDto
     {
         public int Id { get; set; }
 
-        public string Nome { get; set; }
+        public string Name { get; set; }
 
         public string Email { get; set; }
     }

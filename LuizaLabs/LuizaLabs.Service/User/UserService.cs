@@ -1,14 +1,11 @@
 ﻿using AutoMapper;
 using LuizaLabs.Domain.User;
 using LuizaLabs.Infra.Data.User;
+using LuizaLabs.Service.Email;
 using LuizaLabs.Service.User.Dtos;
 using LuizaLabs.Shared.Extensions;
-using Microsoft.IdentityModel.Tokens;
 using System;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace LuizaLabs.Service.User
@@ -16,50 +13,76 @@ namespace LuizaLabs.Service.User
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IEmailService _emailService;
         private readonly IMapper _mapper;
-
-        public UserService(IUserRepository userRepository, IMapper mapper)
+        
+        public UserService(IUserRepository userRepository, 
+                           IEmailService emailService, 
+                           IMapper mapper)
         {
             _userRepository = userRepository;
+            _emailService = emailService;
             _mapper = mapper;
         }
 
-        public async Task<UserRegisterResponseDto> Add(UserRegisterRequestDto userRequest)
+        public async Task<UserResponseDto> Add(UserRegisterRequestDto userRequest)
         {
-            var user = _mapper.Map<UserModel>(userRequest);
-            var added = await _userRepository.Add(user);
-            return _mapper.Map<UserRegisterResponseDto>(added);
+            var userModel = _mapper.Map<UserModel>(userRequest);
+            if (!userModel.IsValid())
+                throw new ArgumentException("Usuário inválido");
+
+            var userExists = (await _userRepository.GetByFilters(p => p.Email == userModel.Email)).Any();
+
+            if (userExists)
+                throw new ArgumentException("Usuário já cadastrado");
+            
+            var userAdded = await _userRepository.Add(userModel);
+            return _mapper.Map<UserResponseDto>(userAdded);
         }
 
-        public async Task<UserModel> GetById(int id)
+        public async Task<UserResponseDto> GetById(int id)
         {
-            return (await _userRepository.GetByFilters(p => p.Id == id)).FirstOrDefault();
+            var userExists = await _userRepository.GetByFilters(p => p.Id == id);
+
+            if (userExists is null)
+                throw new ArgumentNullException("Usuario não encontrado");
+
+            return _mapper.Map<UserResponseDto>(userExists.FirstOrDefault());
         }
 
         public async Task<UserTokenResponseDto> Login(UserLoginRequestDto user)
         {
-            var result = (await _userRepository.GetByFilters(p => p.Email == user.Email && p.Password == user.Password)).FirstOrDefault();
+            var result = (await _userRepository.GetByFilters(p => p.Email == user.Email && p.Password == StringExtensions.EncryptPassword(user.Password))).FirstOrDefault();
+            if (result is null)
+                throw new ArgumentException("Usuario e/ou senha inválidos");
+
             var jwtToken = JwtExtensions.GenerateJwtToken(result.Id.ToString(), result.Email);
 
             return new UserTokenResponseDto(result.Id, result.Name, jwtToken.Item1, jwtToken.Item2);
         }
 
-        public async Task<UserModel> Update(UserPutRequestDto userUpdate)
+        public async Task Update(UserPutRequestDto userUpdate)
         {
-            var user = _mapper.Map<UserModel>(userUpdate);
-            return await _userRepository.Update(user);
+            var userModel = _mapper.Map<UserModel>(userUpdate);
+            if (!userModel.IsValid())
+                throw new ArgumentException("Usuario inválido");
+
+            var userExists = (await _userRepository.GetByFilters(p => p.Email == userModel.Email)).Any();
+
+            if (!userExists)
+                throw new ArgumentNullException("Usuário não encontrado");
+
+            await _userRepository.Update(userModel);
         }
 
-        public async Task<UserModel> ResetPassword(string email)
+        public async Task ResetPassword(string email)
         {
-            var user = await _userRepository.GetByFilters(x => x.Email == email);
+            var userExists = await _userRepository.GetByFilters(x => x.Email == email);
 
-            //if (!user.Any())
-            //    throw new ElementoNaoEncontratoException("Usuario não encontrado");
+            if (!userExists.Any())
+                throw new Exception("Usuario não encontrado");
 
-            //_servicoEmail.EnviaEmail(user.FirstOrDefault());
-
-            return user.FirstOrDefault();
+            await _emailService.SendPasswordChange(userExists.FirstOrDefault());
         }
     }
 }

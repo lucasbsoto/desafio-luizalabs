@@ -11,7 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuizaLabs.Service", "LuizaL
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuizaLabs.Infra.Data", "LuizaLabs.Infra.Data\LuizaLabs.Infra.Data.csproj", "{9D2380CE-E5B1-4322-A292-440DEF81EBC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuizaLabs.Shared", "LuizaLabs.Shared\LuizaLabs.Shared.csproj", "{79D4A63D-4B21-4E0F-B775-C82886A15317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LuizaLabs.Shared", "LuizaLabs.Shared\LuizaLabs.Shared.csproj", "{79D4A63D-4B21-4E0F-B775-C82886A15317}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Api", "01 - Api", "{B5E3FA36-3601-4D87-AB42-A83646483BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Service", "02 - Service", "{48386B2B-0A8B-4328-804A-8F084A6B4534}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{1D1435AD-1633-486E-8428-52239BC5636C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Repository", "04 - Repository", "{276DC9DB-BF3C-46D2-972C-D1E46A0A325F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Shared", "05 - Shared", "{B8166E99-4E2B-4535-BABB-D44102749206}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +52,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37FE13FD-4D09-4129-9E44-4C8574AE34A1} = {B5E3FA36-3601-4D87-AB42-A83646483BE4}
+		{846F25BC-F3CE-4666-9678-FD29CE2381C5} = {1D1435AD-1633-486E-8428-52239BC5636C}
+		{5DED4EE7-E0FA-40D0-A438-0B26D198DEC0} = {48386B2B-0A8B-4328-804A-8F084A6B4534}
+		{9D2380CE-E5B1-4322-A292-440DEF81EBC6} = {276DC9DB-BF3C-46D2-972C-D1E46A0A325F}
+		{79D4A63D-4B21-4E0F-B775-C82886A15317} = {B8166E99-4E2B-4535-BABB-D44102749206}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D4BBCE2-0999-40BD-871D-1B99AAE980D5}

@@ -1,5 +1,6 @@
 using LuizaLabs.Infra.Data.Context;
 using LuizaLabs.Infra.Data.User;
+using LuizaLabs.Service.Email;
 using LuizaLabs.Service.Mapper;
 using LuizaLabs.Service.User;
 using LuizaLabs.Shared.Settings;
@@ -55,6 +56,10 @@ namespace LuizaLabs.Api
 
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+
+            var emailSettingsSection = Configuration.GetSection("EmailSettings");
+            services.Configure<EmailSettings>(emailSettingsSection);
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -72,10 +77,6 @@ namespace LuizaLabs.Api
                     ValidateAudience = false
                 };
             });
-
-            //services.AddScoped<DbContext, EntityFrameworkContext>();
-
-            //services.AddDbContext<EntityFrameworkContext>(options => options.UseSqlite("Data Source=LuizaLabs.db"));
 
 
             services.AddSwaggerGen(c =>
@@ -156,7 +157,8 @@ namespace LuizaLabs.Api
         private IServiceCollection RegisterDependencies(IServiceCollection services)
         {
             services.AddTransient<IUserService, UserService>();
-
+            services.AddTransient<IEmailService, EmailService>();
+            
             services.AddTransient<IUserRepository, UserRepository>();
 
             return services;

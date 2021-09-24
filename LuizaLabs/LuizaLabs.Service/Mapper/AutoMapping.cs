@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using LuizaLabs.Domain.User;
 using LuizaLabs.Service.User.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LuizaLabs.Shared.Extensions;
 
 namespace LuizaLabs.Service.Mapper
 {
@@ -13,10 +9,13 @@ namespace LuizaLabs.Service.Mapper
     {
         public AutoMapping() 
         {
-            CreateMap<UserRegisterRequestDto, UserModel>();
-            CreateMap<UserModel, UserRegisterResponseDto>();
+            CreateMap<UserRegisterRequestDto, UserModel>()
+                .ForMember(a => a.Password, d => d.MapFrom(s => StringExtensions.EncryptPassword(s.Password)));
 
-            CreateMap<UserPutRequestDto, UserModel>();
+            CreateMap<UserModel, UserResponseDto>();
+
+            CreateMap<UserPutRequestDto, UserModel>()
+                .ForMember(a => a.Password, d => d.MapFrom(s => StringExtensions.EncryptPassword(s.Password)));
         }
     }
 }

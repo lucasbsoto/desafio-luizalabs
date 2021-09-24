@@ -34,3 +34,5 @@ C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\obj
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\obj\Debug\net5.0\ref\LuizaLabs.Infra.Data.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\obj\Debug\net5.0\LuizaLabs.Infra.Data.pdb
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\obj\Debug\net5.0\LuizaLabs.Infra.Data.genruntimeconfig.cache
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\bin\Debug\net5.0\LuizaLabs.Shared.dll
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Infra.Data\bin\Debug\net5.0\LuizaLabs.Shared.pdb

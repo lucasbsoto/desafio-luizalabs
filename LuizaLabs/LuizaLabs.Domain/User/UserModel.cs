@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LuizaLabs.Domain.Base;
+using LuizaLabs.Shared.Extensions;
 
 namespace LuizaLabs.Domain.User
 {
-    public class UserModel
+    public class UserModel : IEntity
     {
         public UserModel() {}
 
@@ -17,5 +14,12 @@ namespace LuizaLabs.Domain.User
         public string Email { get; set; }
 
         public string Password { get; set; }
+
+        public bool IsValid()
+        {
+            return (!string.IsNullOrEmpty(Name) && Name.Length <= 120)
+                && (ValidationExtensions.EmailIsValid(Email))
+                && (!string.IsNullOrEmpty(Password) && Password.Length <= 120);
+        }
     }
 }

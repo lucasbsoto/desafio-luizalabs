@@ -9,3 +9,4 @@ C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Deb
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\ref\LuizaLabs.Shared.dll
 C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.pdb
+C:\Users\lucas\source\repos\desafio-luizalabs\LuizaLabs\LuizaLabs.Shared\obj\Debug\net5.0\LuizaLabs.Shared.csproj.AssemblyReference.cache

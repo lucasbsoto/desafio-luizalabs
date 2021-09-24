@@ -2,10 +2,10 @@
 {
     public class EmailSettings
     {
-        public string EmailServer { get; set; }
-        public string EmailPort { get; set; }
-        public string EmailUser { get; set; }
-        public string EmailPassword { get; set; }
-        public string EmailFrom { get; set; }
+        public string FromEmailAdress { get; set; }
+        public string SmtpHost { get; set; }
+        public string SmtpUser { get; set; }
+        public string SmtpPass { get; set; }
+        public string SmtpPort { get; set; }
     }
 }

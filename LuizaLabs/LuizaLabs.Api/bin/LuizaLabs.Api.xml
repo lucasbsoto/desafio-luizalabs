@@ -6,14 +6,14 @@
     <members>
         <member name="M:LuizaLabs.Api.Controllers.UserController.PostRegister(LuizaLabs.Service.User.Dtos.UserRegisterRequestDto)">
             <summary>
-            Cadastra um usuário novo
+            Cadastra novo usuário 
             </summary>
             <response code="201">Usuário cadastrado com sucesso</response>
             <response code="400">Dados do usuário inválidos</response>
             <response code="409">Já existe um usuário com esse email</response>
             <response code="500">Erro interno da aplicação</response>
-            <param name="usuarioPost">Dados do usuário para cadastrar</param>
-            <returns><see cref="!:UsuarioGetDto"/>Dados do usuário cadastrado</returns>
+            <param name="userRegister">Dados do usuário para cadastrar</param>
+            <returns><see cref="T:LuizaLabs.Service.User.Dtos.UserResponseDto"/>Dados do usuário cadastrado</returns>
         </member>
         <member name="M:LuizaLabs.Api.Controllers.UserController.PostAuthenticate(LuizaLabs.Service.User.Dtos.UserLoginRequestDto)">
             <summary>
@@ -23,10 +23,10 @@
             <response code="400">Credenciais inválidas</response>
             <response code="404">Usuário não encontrado</response>
             <response code="500">Erro interno da aplicação</response>
-            <param name="usuarioLogin"><see cref="!:UsuarioLoginDto"/>Dados de login</param>
-            <returns><see cref="!:TokenUsuarioDto"/>Token de autenticação</returns>
+            <param name="userLogin"><see cref="T:LuizaLabs.Service.User.Dtos.UserLoginRequestDto"/>Dados de login</param>
+            <returns><see cref="T:LuizaLabs.Service.User.Dtos.UserTokenResponseDto"/>Token de autenticação</returns>
         </member>
-        <member name="M:LuizaLabs.Api.Controllers.UserController.GetRecuperacaoSenha(System.String)">
+        <member name="M:LuizaLabs.Api.Controllers.UserController.GetResetPassword(System.String)">
             <summary>
             Recupera senha do usuário
             </summary>
@@ -35,7 +35,7 @@
             <response code="500">Erro interno da aplicação</response>
             <param name="email">Email do usuário para recuperação</param>
         </member>
-        <member name="M:LuizaLabs.Api.Controllers.UserController.PutSenha(LuizaLabs.Service.User.Dtos.UserPutRequestDto)">
+        <member name="M:LuizaLabs.Api.Controllers.UserController.PutPassword(LuizaLabs.Service.User.Dtos.UserPutRequestDto)">
             <summary>
             Altera a senha de um usuário
             </summary>
@@ -43,7 +43,17 @@
             <response code="400">Dados do usuário inválidos</response>
             <response code="404">Usuário não encontrado</response>
             <response code="500">Erro interno da aplicação</response>
-            <param name="usuarioPut">Dados do usuário para alterar a senha</param>
+            <param name="id">Identificador do usuário</param>
+            <param name="userPut">Dados do usuário para alterar a senha</param>
+        </member>
+        <member name="M:LuizaLabs.Api.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Busca usuário através do id
+            </summary>
+            <param name="id">Identificador do usuário</param>
+            <response code="200">Usuário encontrado com sucesso</response>
+            <response code="404">Usuário não encontrado.</response>
+            <response code="500">Erro interno do sistema.</response>
         </member>
     </members>
 </doc>
