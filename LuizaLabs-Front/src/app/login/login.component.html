@@ -1,0 +1,19 @@
+<div class="page-login">
+    <form class="form-login" [formGroup]="formLogin" (ngSubmit)="login()">
+        <mat-form-field appearance="outline">
+            <mat-label>E-mail</mat-label>
+            <input type="email" matInput placeholder="Ex. pat@example.com" formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Senha</mat-label>
+            <input type="password" matInput placeholder="a12346@" formControlName="password">
+        </mat-form-field>
+        <div class="action-login">
+            <button mat-raised-button class="login-color" type="submit">Entrar</button>
+            <button mat-raised-button color="primary" type="button" [routerLink]="'/user'">Criar conta</button>
+        </div>
+        <div class="reset-account">
+            <a href="">Esqueci minha senha</a>
+        </div>
+    </form>
+</div>
